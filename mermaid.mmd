@@ -1,0 +1,12 @@
+::: mermaid
+C4Context
+    title Animated Delivery Flow
+    step "1. Client Initiation"
+        Client->DeliverySystem: Creates request
+    step "2. Courier Matching"
+        DeliverySystem->Courier: Assigns delivery
+    step "3. Payment Processing"
+        DeliverySystem->PaymentGateway: Verifies payment
+    step "4. Real-time Tracking"
+        DeliverySystem->MapsAPI: Gets route
+        Courier-->Client: Updates statu
